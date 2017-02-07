@@ -2,7 +2,7 @@ name := "shop-checkout"
 
 version := "1.0-SNAPSHOT"
 
-organization := "com.oef"
+organization := "com.oefs"
 
 scalaVersion := "2.11.8"
 
