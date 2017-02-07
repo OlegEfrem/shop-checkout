@@ -1,10 +1,10 @@
-package oef.shop.checkout.default
+package com.oef.shop.checkout.default
 
-import oef.shop.checkout.dummy.DummyParam
-import oef.shop.checkout.model.{Apple, Offer, Item}
-import oef.shop.checkout.model.base.Price
-import org.scalatest.{Matchers, FlatSpec}
+import com.oef.shop.checkout.model.{ Apple, Item, Offer }
+import com.oef.shop.checkout.model.base.Price
+import org.scalatest.{ FlatSpec, Matchers }
 import OfferCalculator._
+import com.oef.shop.checkout.dummy.DummyParam
 
 class OfferCalculatorTest extends FlatSpec with Matchers with DummyParam {
 
@@ -15,7 +15,7 @@ class OfferCalculatorTest extends FlatSpec with Matchers with DummyParam {
   }
 
   it should "apply offer only on 4 out of 5 apples" in {
-    val items = makeItems(5, 0)
+    val items = makeItems(5)
     val offer = Offer(Apple(), 2, 1)
     (calculate(items, offer) ~= Price(1.8)) shouldEqual true
   }

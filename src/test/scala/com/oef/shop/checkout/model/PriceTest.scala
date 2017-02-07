@@ -1,7 +1,7 @@
-package oef.shop.checkout.model
+package com.oef.shop.checkout.model
 
-import oef.shop.checkout.model.base.Price
-import org.scalatest.{Matchers, WordSpec}
+import com.oef.shop.checkout.model.base.Price
+import org.scalatest.{ Matchers, WordSpec }
 
 class PriceTest extends WordSpec with Matchers {
 

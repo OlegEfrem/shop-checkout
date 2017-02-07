@@ -1,6 +1,6 @@
-package oef.shop.checkout.model
+package com.oef.shop.checkout.model
 
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.{ FlatSpec, Matchers }
 
 class OfferTest extends FlatSpec with Matchers {
 

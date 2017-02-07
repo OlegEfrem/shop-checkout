@@ -1,8 +1,8 @@
-package oef.shop.checkout.model
+package com.oef.shop.checkout.model
 
 /**
-  * Encapsulated Offer objects creation to only allow numbers greater than zero, to avoid division by zero and negative results on price calculations.
-  * */
+ * Encapsulated Offer objects creation to only allow numbers greater than zero, to avoid division by zero and negative results on price calculations.
+ */
 trait Offer {
   def onItem: Item
   def buy: Int

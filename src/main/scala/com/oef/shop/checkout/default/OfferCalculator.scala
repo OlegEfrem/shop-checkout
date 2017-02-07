@@ -1,7 +1,7 @@
-package oef.shop.checkout.default
+package com.oef.shop.checkout.default
 
-import oef.shop.checkout.model.base.Price
-import oef.shop.checkout.model.{Item, Offer}
+import com.oef.shop.checkout.model.base.Price
+import com.oef.shop.checkout.model.{ Item, Offer }
 
 object OfferCalculator {
 

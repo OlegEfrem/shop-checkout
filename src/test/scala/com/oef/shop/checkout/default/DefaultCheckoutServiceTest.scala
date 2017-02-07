@@ -1,10 +1,10 @@
-package oef.shop.checkout.default
+package com.oef.shop.checkout.default
 
-import oef.shop.checkout.OfferCache
-import oef.shop.checkout.dummy.DummyParam
-import oef.shop.checkout.model.base.Price
-import oef.shop.checkout.model.{Apple, Offer, Orange}
-import org.scalatest.{Matchers, WordSpec}
+import com.oef.shop.checkout.OfferCache
+import com.oef.shop.checkout.dummy.DummyParam
+import com.oef.shop.checkout.model.base.Price
+import com.oef.shop.checkout.model.{ Apple, Offer, Orange }
+import org.scalatest.{ Matchers, WordSpec }
 
 class DefaultCheckoutServiceTest extends WordSpec with Matchers with DummyParam {
 
@@ -28,7 +28,6 @@ class DefaultCheckoutServiceTest extends WordSpec with Matchers with DummyParam 
       checkoutService().checkout(Traversable(Orange())) shouldNot be(Orange().price + Orange().price)
     }
   }
-
 
   "checkoutWithOffer" should {
     "return zero for no items" in {
